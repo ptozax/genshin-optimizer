@@ -3,7 +3,7 @@ name: Build New Release
 on:
   pull_request:
     types: [closed]
-
+  workflow_dispatch:  # Allows manual trigger
 jobs:
   build:
     runs-on: ubuntu-latest
